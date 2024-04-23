@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-section {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 4px red solid;
+  margin-bottom: 10px;
+  background-color: rgba(37, 25, 25, 0.918);
+}
+
+
+#logo img {
+  height: 150px;
+  padding: 10px;
+  border-radius: 80px;
+  box-shadow: 2px 2px 4px rgb(255, 0, 0);
+  margin: 10px;
+}
+
+.slogan {
+  font-family: serif;
+  color: blue;
+  font-size: 18px;
+}
+
+.slogan span {
+  color: red;
+}
+
+.device-slogan {
+  text-align: center;
+  display: none;
+}
+
+.nav-items-container {
+  padding: 7px;
+  border-radius: 5px;
+  border-top: double red;
+  border-bottom: double blue;
+}
+
+.nav-items {
+  margin-right: 100px;
+}
+
+.nav-items nav li {
+  list-style-type: none;
+  display: inline;
+}
+
+.nav-items nav button {
+  border-top: 1px rgb(79, 60, 246);
+  border-left: 1px rgb(79, 60, 246);
+  border-style: solid;
+  background-color: rgb(255, 255, 255);
+  font-size: 13px;
+  color: rgb(231, 103, 103);
+  font-family: fantasy;
+  padding: 6px;
+  text-align: center;
+  text-shadow: 2px 2px 3px rgb(234, 210, 210);
+  border-bottom-right-radius: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-items nav button:hover {
+  background-color: rgba(253, 253, 253, 0.929);
+  color: rgb(252, 33, 33);
+  border-top: 1px black solid;
+  border-left: 1px black solid;
+  box-shadow: 2px 2px 4px rgb(166, 170, 239);
+  font-size: 16px;
+  text-shadow: none;
+}
+
+
+.navb1,
+.navb2,
+.navb3 {
+  margin-right: 20px;
+}
+
+.img-donate {
+  display: flex;
+  border-bottom: 1px rgb(22, 10, 250) solid;
+}
+
+.message {
+  margin-left: 10px;
+  width: 22%;
+  background-color: rgba(234, 227, 244, 0.765);
+  border: 2px solid rgb(78, 78, 253);
+}
+
+.message h1 {
+  color: blueviolet;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-color: rgb(101, 101, 241);
+
+}
+
+.message p {
+  padding: 14px;
+  font-size: large;
+}
+
+.message a {
+  text-decoration: none;
+  color: rgba(144, 0, 255, 0.845);
+  font-weight: bold;
+}
+
+.message .sp1 {
+  color: red;
+}
+
+.message .sp3 {
+  color: blue;
+}
+
+#home-sect {
+  position: relative;
+  width: 78%;
+  background-color: rgb(230, 227, 242);
+  animation: home-sect-anime 3s linear;
+}
+
+@keyframes home-sect-anime {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+
+.fifth-aniversary img {
+  width: 100%;
+  height: 600px;
+  padding: 15px;
+  transform: skewX(1.5deg);
+  box-shadow: 2px 2px 3px rgb(155, 169, 237);
+  border-radius: 40px;
+}
+
+.donate-text {
+  padding-top: 25px;
+  text-align: center;
+  font-size: larger;
+}
+
+
+.donate-text button {
+  font-size: 26px;
+  margin-top: 10px;
+  border-style: none;
+  margin-bottom: 14px;
+  font-family: serif;
+  font-weight: bolder;
+  color: rgb(70, 70, 247);
+  text-shadow: 2px 2px 3px rgb(97, 96, 96);
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.25s;
+  animation: run 3s infinite cubic-bezier(0.47, 0, 0.745, 0.715), letter-spacing 3s ease-in-out infinite;
+}
+
+@keyframes run {
+  50% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    transform: translateX(20px);
+  }
+}
+
+@keyframes letter-spacing {
+  50% {
+    letter-spacing: 5px;
+    font-size: 30px;
+  }
+}
+
+.donate-text button:hover {
+  cursor: pointer;
+  border-left: 1px solid red;
+  border-right: 1px solid blue;
+  background-color: rgb(255, 255, 255);
+  font-size: 27px;
+  color: rgb(76, 76, 253);
+  animation: none;
+}
+
+.prez-quote {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 35px;
+}
+
+.prez-quote-img {
+  border: 2px solid rgb(234, 189, 234);
+  width: 45%;
+  height: 300px;
+  margin-left: 15px;
+  position: relative;
+  margin-right: 20px;
+}
+
+
+.prez-quote-img .prez-quote-img-main img {
+  height: 95%;
+  width: 95%;
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+.prez-quote-text {
+  background-color: rgba(30, 29, 29, 0.32);
+  color: rgb(66, 66, 66);
+  font-size: 21px;
+  font-style: italic;
+  padding: 14px;
+  text-align: center;
+}
+
+#donations-review {
+  width: 95%;
+  margin: auto;
+}
+
+.review-button button {
+  background-color: rgb(128, 128, 252);
+  color: rgb(208, 218, 245);
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  font-family: serif;
+  margin-left: 25px;
+  border-radius: 10px;
+  animation: button-anime 3s linear, button-bright 3s linear infinite, button-rotate 1s 5 cubic-bezier(0.86, 0, 0.07, 1);
+  margin-bottom: 33px;
+}
+
+@keyframes button-anime {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes button-rotate {
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes button-bright {
+  100% {
+    background-color: rgb(83, 83, 248);
+    color: white;
+  }
+}
+
+.donation-flyers {
+  margin-bottom: 40px;
+  border: 2px solid red;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.donation-flyers div img {
+  box-shadow: 2px 2px 5px rgba(91, 91, 255, 0.868);
+}
+
+.flyers1 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+
+.flyers1 div {
+  border: 1px solid black;
+}
+
+.flyers1 div img {
+  width: 340px;
+}
+
+.flyers1 div img:hover {
+  width: 350px;
+  height: 350px;
+}
+
+.flyers2-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flyer2 img {
+  width: 90%;
+  height: 345px;
+}
+
+.flyer2 img:hover {
+  width: 94%;
+  height: 350px;
+}
+
+.flyer2-2img img {
+  width: 340px;
+}
+
+.flyer2-2img img:hover {
+  width: 346px;
+  height: 350px;
+}
+
+
+
+
+
+
+footer {
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.715);
+  clear: both;
+  background-color: rgba(0, 0, 0, 0.758);
+  border-top: 2px red solid;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  #logo img {
+    text-align: center;
+  }
+
+  .slogan1 {
+    display: none;
+  }
+
+  .device-slogan {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+  }
+
+  .nav-items nav button {
+    display: inline;
+    font-size: 11px;
+  }
+
+  .nav-items-container:hover {
+    border-left: 1px solid red;
+  }
+
+  .nav-items nav button:hover {
+    font-size: 13px;
+  }
+
+  .navb1,
+  .navb2,
+  .navb3 {
+    margin-right: 10px;
+  }
+
+  header {
+    background-color: white;
+  }
+
+  .nav-items-container {
+    padding: 5px;
+    border: none;
+    margin-top: 5px;
+    margin-left: 100%;
+  }
+
+  .img-donate {
+    display: block;
+  }
+
+  .message,
+  #home-sect {
+    width: 100%;
+  }
+
+  .prez-quote {
+    margin-top: 20px;
+  }
+
+  .prez-quote-img {
+    width: 35%;
+    margin-right: 10;
+    margin-top: 30px;
+  }
+
+  .prez-quote-text {
+    width: 60%;
+    font-size: 17px;
+    padding: 3px;
+  }
+
+  .donation-flyers {
+    display: inline-block;
+  }
+
+  .flyer2-2img,
+  .flyers1 div img {
+    width: 100%;
+  }
+
+  .flyers2-container {
+    display: block;
+  }
+
+  .flyers2-container div img {
+    width: 100%;
+  }
+}
